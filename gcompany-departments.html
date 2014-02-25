@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gemican Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-responsive.css" rel="stylesheet">
+    <link href="css/effects.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/tables.css" rel="stylesheet">
+    <link href="css/tables-responsive.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+        <script>
+            $(".header").load("header.html");
+        </script>
+    </div><!-- header -->
+    <div class="pagebody">
+        <div class="pagebody-inner">
+            <div class="leftSideMenu">
+                <div class="leftsidemenu-inner">
+                    <script>
+                        $(".leftsidemenu-inner").load("sidebar.html #leftsidebar-gcompany");
+                    </script>
+                </div><!-- leftsidemenu-inner -->
+            </div><!-- leftSideMenu -->
+            <div class="contentSection">
+                <div class="dataContainer">
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <h2 class="pull-left"><i class="fa fa-building-o icon"></i>G-Company</h2>
+                            <h4 class="currentPageTitle">Company Departments</h4>
+                            <div class="clear"></div><!-- clear -->
+                        </div><!-- span6 -->
+                        <div class="span6">
+                            <a href="#" class="btn-default btn-orange pull-right"><i class="fa fa-download"></i>User Guide</a>
+                            <a href="#" class="btn-default btn-green pull-right margin-right"><i class="fa fa-video-camera"></i>Video Tutorial</a>
+                            <div class="clear"></div><!-- clear -->
+                        </div><!-- span6 -->
+                        <div class="clear"></div><!-- clear -->
+                    </div><!-- row-fluid -->
+
+                    <div class="form_container">
+                        <div class="row-fluid">
+                            <div class="span9 search">
+                                <form action="#" method="post">
+                                    <label>Find Department</label>
+                                    <input type="text" name="searhkey" />
+                                    <button type="submit" class="btn-default">Find</button>
+                                    <div class="clear"></div><!-- clear -->
+                                </form>
+                            </div><!-- span6 -->
+                            <div class="span3 showpage">
+                                <form action="#" method="post">
+                                    <label>Show Per Page</label>
+                                    <input type="text" name="searhkey" placeholder="10"/>
+                                    <button type="submit" class="btn-default">Display</button>
+                                    <div class="clear"></div><!-- clear -->
+                                </form>
+                            </div><!-- span3 -->
+                            <div class="clear"></div><!-- clear -->
+                        </div><!-- row-fluid -->
+                    </div><!-- form_container -->
+
+                    <div class="gtable" id="gtable-departments">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr class="gtable-row gtable-heading">
+                                <td class="gtable-cell col1">
+                                    <div class="gtable-cell-inner">
+                                        <span>department name</span>
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                                <td class="gtable-cell col2">
+                                    <div class="gtable-cell-inner">
+                                        <span>status</span>
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                                <td class="gtable-cell col3">
+                                    <div class="gtable-cell-inner">
+                                        <span>Options</span>
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                            </tr>
+                            <tr><td class="gtable-spacing"></td></tr>
+                            <tr class="gtable-row">
+                                <td class="gtable-cell col1">
+                                    <div class="gtable-cell-inner">
+                                        <a href="#">Department Name Here.</a>
+                                        <div class="moreDetailsContainer dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li class="colData col2">
+                                                    <span class="dataLabel">status</span>
+                                                    <span class="dataInfo">Active</span>
+                                                    <div class="clear"></div><!-- clear -->
+                                                </li>
+                                                <li class="colData col3">
+                                                    <span class="dataLabel">Options</span>
+                                                    <a href="#" class="dataOptions"><i class="fa fa-pencil-square-o"></i>Edit</a>
+                                                    <div class="clear"></div><!-- clear -->
+                                                </li>
+                                            </ul>
+                                        </div><!-- moreDetailsContainer -->
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                                <td class="gtable-cell col2">
+                                    <div class="gtable-cell-inner">
+                                        <span>Active</span>
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                                <td class="gtable-cell col3">
+                                    <div class="gtable-cell-inner">
+                                        <a href="#" title="Edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                            </tr>
+                            <tr><td class="gtable-spacing"></td></tr>
+                            <tr class="gtable-row">
+                                <td class="gtable-cell col1">
+                                    <div class="gtable-cell-inner">
+                                        <a href="#">Department Name Here.</a>
+                                        <div class="moreDetailsContainer dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li class="colData col2">
+                                                    <span class="dataLabel">status</span>
+                                                    <span class="dataInfo">Active</span>
+                                                    <div class="clear"></div><!-- clear -->
+                                                </li>
+                                                <li class="colData col3">
+                                                    <span class="dataLabel">Options</span>
+                                                    <a href="#" class="dataOptions"><i class="fa fa-pencil-square-o"></i>Edit</a>
+                                                    <div class="clear"></div><!-- clear -->
+                                                </li>
+                                            </ul>
+                                        </div><!-- moreDetailsContainer -->
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                                <td class="gtable-cell col2">
+                                    <div class="gtable-cell-inner">
+                                        <span>Suspended</span>
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                                <td class="gtable-cell col3">
+                                    <div class="gtable-cell-inner">
+                                        <a href="#" title="Edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                            </tr>
+                            <tr><td class="gtable-spacing"></td></tr>
+                            <tr class="gtable-row">
+                                <td class="gtable-cell col1">
+                                    <div class="gtable-cell-inner">
+                                        <a href="#">Department Name Here.</a>
+                                        <div class="moreDetailsContainer dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li class="colData col2">
+                                                    <span class="dataLabel">status</span>
+                                                    <span class="dataInfo">Active</span>
+                                                    <div class="clear"></div><!-- clear -->
+                                                </li>
+                                                <li class="colData col3">
+                                                    <span class="dataLabel">Options</span>
+                                                    <a href="#" class="dataOptions"><i class="fa fa-pencil-square-o"></i>Edit</a>
+                                                    <div class="clear"></div><!-- clear -->
+                                                </li>
+                                            </ul>
+                                        </div><!-- moreDetailsContainer -->
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                                <td class="gtable-cell col2">
+                                    <div class="gtable-cell-inner">
+                                        <span>Active</span>
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                                <td class="gtable-cell col3">
+                                    <div class="gtable-cell-inner">
+                                        <a href="#" title="Edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    </div><!-- gtable-cell-inner -->
+                                </td>
+                            </tr>
+                        </table>
+                    </div><!-- gtable -->
+                    <ul class="pagination">
+                        <li><a href="#" class="controls"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="#" class="controls"><i class="fa fa-angle-left"></i></a></li>
+                        <li class="current"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#" class="controls"><i class="fa fa-angle-right"></i></a></li>
+                        <li><a href="#" class="controls"><i class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                    <div class="clear"></div><!-- clear -->
+                    <p class="paginationInfo">Showing Page 1 of 10</p>
+                </div><!-- dataContainer -->
+            </div><!-- contentSection -->
+            <div class="clear"></div><!-- clear -->
+        </div><!-- pagebody-inner -->
+    </div><!-- pagebody -->
+    <footer>
+        <script>
+            $("footer").load("footer.html");
+        </script>
+    </footer><!-- footer -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-affix.js"></script>
+    <script src="js/holder/holder.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body
+</html>

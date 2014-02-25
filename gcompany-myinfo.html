@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gemican Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-responsive.css" rel="stylesheet">
+    <link href="css/effects.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/tables.css" rel="stylesheet">
+    <link href="css/tables-responsive.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+        <script>
+            $(".header").load("header.html");
+        </script>
+    </div><!-- header -->
+    <div class="pagebody">
+        <div class="pagebody-inner">
+            <div class="leftSideMenu">
+                <div class="leftsidemenu-inner">
+                    <script>
+                        $(".leftsidemenu-inner").load("sidebar.html #leftsidebar-gcompany");
+                    </script>
+                </div><!-- leftsidemenu-inner -->
+            </div><!-- leftSideMenu -->
+            <div class="contentSection">
+                <div class="dataContainer">
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <h2 class="pull-left"><i class="fa fa-building-o icon"></i>G-Company</h2>
+                            <h4 class="currentPageTitle">My Info</h4>
+                            <div class="clear"></div><!-- clear -->
+                        </div><!-- span6 -->
+                        <div class="span6">
+                            <a href="#" class="btn-default btn-orange pull-right"><i class="fa fa-download"></i>User Guide</a>
+                            <a href="#" class="btn-default btn-green pull-right margin-right"><i class="fa fa-video-camera"></i>Video Tutorial</a>
+                            <div class="clear"></div><!-- clear -->
+                        </div><!-- span6 -->
+                        <div class="clear"></div><!-- clear -->
+                    </div><!-- row-fluid -->
+
+                    <div class="form_container">
+                        <form action="#" method="post">
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <label class="align-center">Profile Picture</label>
+                                            <div class="profilepicture_container">
+                                                <img src="img/profilepicture_default.png" alt="" />
+                                            </div><!-- profilepicture_container -->
+                                            <span class="btn-default btn-file clr-martop">
+                                                Upload Image 200x200
+                                                <input type="file" name="...">
+                                            </span>
+                                            <input type="radio" name="gender" value="male" class="pull-left">
+                                            <label class="pull-left radioLabel"><i class="fa fa-male"></i>Male</label>
+                                            <input type="radio" name="gender" value="female" class="pull-left">
+                                            <label class="pull-left radioLabel clr-marright"><i class="fa fa-female"></i>Female</label>
+                                            <div class="clear"></div><!-- clear -->
+                                        </div><!-- span6 -->
+                                        <div class="span6">
+                                            <label>First Name</label>
+                                            <input type="text" name="fname" />
+                                            <label>Last Name</label>
+                                            <input type="text" name="lname" />
+                                            <label>Birthday</label>
+                                            <input type="text" name="bday" id="bday_datepicker"/>
+                                            <label>Home/Office Number</label>
+                                            <input type="number" name="homeofficenum" />
+                                            <label>Mobile Number</label>
+                                            <input type="number" name="mobilenum" />
+                                        </div><!-- span6 -->
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- row-fluid -->
+                                </div><!-- span6 -->
+                                <div class="span6">
+                                    <label>Address</label>
+                                    <input type="text" name="address" />
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <label>Cty</label>
+                                            <input type="text" name="city" />
+                                        </div><!-- span6 -->
+                                        <div class="span6">
+                                            <label>State/Province</label>
+                                            <input type="text" name="state" />
+                                        </div><!-- span6 -->
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- row-fluid -->
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <label>Postal Code</label>
+                                            <input type="number" name="pcode" />
+                                        </div><!-- span6 -->
+                                        <div class="span6">
+                                            <label>Country</label>
+                                            <select>
+                                                <option value="0">None</option>
+                                                <option value="1">Country 01</option>
+                                                <option value="2">Country 02</option>
+                                                <option value="3">Country 03</option>
+                                                <option value="4">Country 04</option>
+                                            </select>
+                                        </div><!-- span6 -->
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- row-fluid -->
+                                    <label>Email/Username</label>
+                                    <input type="email" name="username" />
+                                    <div class="row-fluid">
+                                        <div class="span10">
+                                            <label>Password</label>
+                                            <input type="password" name="username" />
+                                        </div><!-- span6 -->
+                                        <div class="span2">
+                                            <span class="btn-default iconButton"><i class="fa fa-refresh clr-marright"></i></span>
+                                        </div><!-- span6 -->
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- row-fluid -->
+                                </div><!-- span6 -->
+                                <div class="clear"></div><!-- clear -->
+                            </div><!-- row-fluid -->
+                        </form>
+                    </div><!-- form_container -->
+
+                    <h2>Management Access Only</h2>
+                    <div class="form_container">
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <label>User/Employee Number</label>
+                                <input type="text" name="employeenumber" />
+                                <label>Employment Type</label>
+                                <select>
+                                    <option value="0">None</option>
+                                    <option value="1">Option 01</option>
+                                    <option value="2">Option 02</option>
+                                    <option value="3">Option 03</option>
+                                </select>
+                                <label>Application Security Group</label>
+                                <select>
+                                    <option value="0">None</option>
+                                    <option value="1">Option 01</option>
+                                    <option value="2">Option 02</option>
+                                    <option value="3">Option 03</option>
+                                </select>
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Suspended</label>
+                                        <select>
+                                            <option value="0">None</option>
+                                            <option value="1">Option 01</option>
+                                            <option value="2">Option 02</option>
+                                            <option value="3">Option 03</option>
+                                        </select>
+                                    </div><!-- span6 -->
+                                    <div class="span6">
+                                        <label>Active</label>
+                                        <select>
+                                            <option value="0">None</option>
+                                            <option value="1">Option 01</option>
+                                            <option value="2">Option 02</option>
+                                            <option value="3">Option 03</option>
+                                        </select>
+                                    </div><!-- span6 -->
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- row-fluid -->
+                                <label>Title</label>
+                                <textarea></textarea>
+                            </div><!-- span6 -->
+                            <div class="span6">
+                                <div class="row-fluid">
+                                    <div class="span10">
+                                        <label>User Type</label>
+                                        <select>
+                                            <option value="0">None</option>
+                                            <option value="1">Option 01</option>
+                                            <option value="2">Option 02</option>
+                                            <option value="3">Option 03</option>
+                                        </select>
+                                    </div><!-- span10 -->
+                                    <div class="span2">
+                                        <span class="btn-default iconButton mpop" rel="addUserType"><i class="fa fa-plus clr-marright"></i></span>
+                                        <ul class="mpop-menu pos-right" id="addUserType">
+                                            <li>
+                                                <form action="#" method="post">
+                                                    <label>New User Type</label>
+                                                    <input type="text" name="newusertype" />
+                                                    <input type="button" name="save" value="Save" class="btn-default btn-small btn-blue pull-left"/>
+                                                    <input type="button" name="save" value="Cancel" class="btn-default btn-small btn-red pull-right mpop-cancel"/>
+                                                    <div class="clear"></div><!-- clear -->
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div><!-- span10 -->
+                                </div><!-- row-fluid -->
+                                <div class="row-fluid">
+                                    <div class="span10">
+                                        <label>Department</label>
+                                        <select>
+                                            <option value="0">None</option>
+                                            <option value="1">Option 01</option>
+                                            <option value="2">Option 02</option>
+                                            <option value="3">Option 03</option>
+                                        </select>
+                                    </div><!-- span10 -->
+                                    <div class="span2">
+                                            <span class="btn-default iconButton mpop" rel="addDepartment"><i class="fa fa-plus clr-marright"></i></span>
+                                            <ul class="mpop-menu pos-right" id="addDepartment">
+                                                <li>
+                                                    <form action="#" method="post">
+                                                        <label>New Department</label>
+                                                        <input type="text" name="department" />
+                                                        <input type="button" name="save" value="Save" class="btn-default btn-small btn-blue pull-left"/>
+                                                        <input type="button" name="save" value="Cancel" class="btn-default btn-small btn-red pull-right mpop-cancel"/>
+                                                        <div class="clear"></div><!-- clear -->
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                    </div><!-- span10 -->
+                                </div><!-- row-fluid -->
+                                <label>User Permission</label>
+                                <select>
+                                    <option value="0">None</option>
+                                    <option value="1">Option 01</option>
+                                    <option value="2">Option 02</option>
+                                    <option value="3">Option 03</option>
+                                </select>
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Report To</label>
+                                        <select>
+                                            <option value="0">None</option>
+                                            <option value="1">Option 01</option>
+                                            <option value="2">Option 02</option>
+                                            <option value="3">Option 03</option>
+                                        </select>
+                                    </div><!-- span6 -->
+                                    <div class="span6">
+                                        <label>Hire Date</label>
+                                        <input type="number" name="datehired" id="date_hired"/>
+                                    </div><!-- span6 -->
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- row-fluid -->
+                                <label>Title</label>
+                                <input type="text" name="tile" />
+                                <input type="button" class="btn-default btn-red pull-right" value="Cancel" />
+                                <input type="button" class="btn-default btn-blue pull-right margin-right" value="Save" />
+                                <div class="clear"></div><!-- clear -->
+                            </div><!-- span6 -->
+                            <div class="clear"></div><!-- clear -->
+                        </div><!-- row-fluid -->
+                    </div><!-- form_container -->
+                </div><!-- dataContainer -->
+            </div><!-- contentSection -->
+            <div class="clear"></div><!-- clear -->
+        </div><!-- pagebody-inner -->
+    </div><!-- pagebody -->
+    <footer>
+        <script>
+            $("footer").load("footer.html");
+        </script>
+    </footer><!-- footer -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-affix.js"></script>
+    <script src="js/holder/holder.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body
+</html>

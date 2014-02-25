@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gemican Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-responsive.css" rel="stylesheet">
+    <link href="css/effects.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+
+  <body>
+    <header>
+        <div class="signuplogin">
+            <div class="signuplogin-inner">
+                <div class="formContainer" id="loginForm">
+                    <span class="closeForm"><img src="img/close.png" alt="Close" /></span>
+                    <h3>Members Login</h3>
+                    <div class="formWrapper">
+                        <form action="#" method="post">
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <label>Email / Username</label>
+                                    <input type="text" name="username" placeholder="" />
+                                </div><!-- span6 -->
+                                <div class="span6">
+                                    <label>Password</label>
+                                    <input type="password" name="username" placeholder="" />
+                                </div><!-- span6 -->
+                                <div class="clear"></div><!-- clear -->
+                            </div><!-- row-fluid -->
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <input type="submit" class="btn btn-primary" value="login">
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- span6 -->
+                                <div class="span6">
+                                    <input type="checkbox" name="rememberme" value="rememberme"><span class="checkboxlabel">Remember Me</span>
+                                    <div class="clear"></div><!-- clear -->
+                                    <a href="#" class="loginOptions"><i class="fa fa-arrow-right"></i>Forgot password?</a>
+                                    <a href="#" class="loginOptions"><i class="fa fa-arrow-right"></i>Sign-up for an account.</a>
+                                </div><!-- span6 -->
+                                <div class="clear"></div><!-- clear -->
+                            </div><!-- row-fluid -->
+                        </form>
+                    </div><!-- formWrapper -->
+                </div><!-- loginForm -->
+                <div class="formContainer" id="signupForm">
+                    <span class="closeForm"><img src="img/close.png" alt="Close" /></span>
+                    <h3>Create an Account</h3>
+                </div><!-- signupForm -->
+            </div><!-- singuplogin-inner -->
+        </div><!-- signuplogin -->
+        <span class="backdrop_form"></span><!-- important -->
+
+        <div class="header-inner">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a class="brand" href="/">GEMICAN</a>
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="userMenu">
+                            <p class="contactinfo"><i class="fa fa-phone-square"></i>  1-855-828-0222 Ext 103</p>
+                            <span class="userLoginBtn pull-right">Login</span>
+                            <span class="userSignupBtn pull-right">Sign-Up</span>
+                            <div class="clear"></div><!-- clear -->
+                        </div>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">application<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">G-Book</a></li>
+                                        <li><a href="#">G-Client</a></li>
+                                        <li><a href="#">G-Document</a></li>
+                                        <li><a href="#">G-Message</a></li>
+                                        <li><a href="#">G-Time</a></li>
+                                        <li><a href="#">G-Travel</a></li>
+                                        <li><a href="gcompany-myinfo.html">G-Company</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">gemican solutions</a></li>
+                                <li><a href="#">features &amp; pricing</a></li>
+                                <li><a href="#">community</a></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </div><!-- nav-collapse -->
+                    </div><!-- container -->
+                </div><!-- navbar-inner -->
+            </div><!-- navbar -->
+        </div><!-- header-inner -->
+    </header>
+
+    <div class="contentSlider">
+        <div class="contentContainer activated" id="contentSlide01">
+            <div class="contentcontainer-inner">
+                <h3>GEMICAN<br><span>SOFTWARE</span></h3>
+                <h1 class="align-center animated">G-BOOK</h1>
+                <h4>Keep track of your financial transactions.</h4>
+                <a href="#" class="btn-learnmore">Learn More</a>
+            </div><!-- contentcontainer-inner -->
+        </div><!-- contentContainer -->
+        <div class="contentContainer" id="contentSlide02">
+            <div class="contentcontainer-inner">
+                <h3>GEMICAN<br><span>SOFTWARE</span></h3>
+                <h1 class="align-center animated">G-CLIENT</h1>
+                <h4>Access your client information in real time.</h4>
+                <a href="#" class="btn-learnmore">Learn More</a>
+            </div><!-- contentcontainer-inner -->
+        </div><!-- contentContainer -->
+        <div class="contentContainer" id="contentSlide03">
+            <div class="contentcontainer-inner">
+                <h3>GEMICAN<br><span>SOFTWARE</span></h3>
+                <h1 class="align-center animated">G-DOC</h1>
+                <h4>Store and retrieve your documents online.</h4>
+                <a href="#" class="btn-learnmore">Learn More</a>
+            </div><!-- contentcontainer-inner -->
+        </div><!-- contentContainer -->
+        <div class="contentContainer" id="contentSlide04">
+            <div class="contentcontainer-inner">
+                <h3>GEMICAN<br><span>SOFTWARE</span></h3>
+                <h1 class="align-center animated">G-MESSAGE</h1>
+                <h4>Manage your business from anywhere.</h4>
+                <a href="#" class="btn-learnmore">Learn More</a>
+            </div><!-- contentcontainer-inner -->
+        </div><!-- contentContainer -->
+        <div class="contentContainer" id="contentSlide05">
+            <div class="contentcontainer-inner">
+                <h3>GEMICAN<br><span>SOFTWARE</span></h3>
+                <h1 class="align-center animated">G-TIME</h1>
+                <h4>Track your valuable time on any task.</h4>
+                <a href="#" class="btn-learnmore">Learn More</a>
+            </div><!-- contentcontainer-inner -->
+        </div><!-- contentContainer -->
+        <div class="contentContainer" id="contentSlide06">
+            <div class="contentcontainer-inner">
+                <h3>GEMICAN<br><span>SOFTWARE</span></h3>
+                <h1 class="align-center animated">G-TRAVEL</h1>
+                <h4>Log your travel mileage.</h4>
+                <a href="#" class="btn-learnmore">Learn More</a>
+            </div><!-- contentcontainer-inner -->
+        </div><!-- contentContainer -->
+    </div><!-- contentSlider -->
+
+    <div class="section01">
+        <div class="section01-inner">
+            <div class="row-fluid">
+                <div class="span6">
+                    <a href="#" class="service-icon pull-right"><i class="fa fa-building-o"></i></a>
+                    <div class="contentWrapper pull-left align-right">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>One dedicated landing page for you to display your business logo, contact information, announcements and other important resource links for your employees.</p>
+                    </div><!-- contentWrapper -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- span6 -->
+                <div class="span6">
+                    <a href="#" class="service-icon pull-left"><i class="fa fa-clock-o"></i></a>
+                    <div class="contentWrapper pull-left">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>Access and share data in real time within your local area network or over the internet. Deliver information within seconds, and cut back on waiting time. </p>
+                    </div><!-- contentWrapper -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- span6 -->
+                <div class="clear"></div><!-- clear -->
+            </div><!-- row-fluid -->
+            <div class="row-fluid">
+                <div class="span6">
+                    <a href="#" class="service-icon pull-right"><i class="fa fa-cloud-upload"></i></a>
+                    <div class="contentWrapper pull-left align-right">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>More storage capacity, better performance and strong data protection against disaster. Easy to back up, restore, expand and migrate data. </p>
+                    </div><!-- contentWrapper -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- span6 -->
+                <div class="span6">
+                    <a href="#" class="service-icon pull-left"><i class="fa fa-lock"></i></a>
+                    <div class="contentWrapper pull-left">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>Multiple layers of security such as storage protection, data encryption, application access group, application and data access permission. </p>
+                    </div><!-- contentWrapper -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- span6 -->
+                <div class="clear"></div><!-- clear -->
+            </div><!-- row-fluid -->
+            <div class="row-fluid">
+                <div class="span6">
+                    <a href="#" class="service-icon pull-right"><i class="fa fa-bar-chart-o"></i></a>
+                    <div class="contentWrapper pull-left align-right">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>View the latest stock quotes, and read the latest business and financial news brought to you by our dedicated staff. </p>
+                    </div><!-- contentWrapper -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- span6 -->
+                <div class="span6">
+                    <a href="#" class="service-icon pull-left"><i class="fa fa-cogs"></i></a>
+                    <div class="contentWrapper pull-left">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>Some businesses have unique requirements. We can customize the applications to fit your business need. Contact us for more information.</p>
+                    </div><!-- contentWrapper -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- span6 -->
+                <div class="clear"></div><!-- clear -->
+            </div><!-- row-fluid -->
+        </div><!-- section01-inner -->
+    </div><!-- section01 -->
+
+    <div class="tabsection">
+        <div class="tabsection-inner">
+            <p class="sectionDescription align-center">Need software unique to your business? We can build specific applications for your company, contact us.</p>
+            <h2 class="heading">Simple, accessible, and easy to use cloud based applications.</h2>
+            <div class="tabContentWrapper">
+                <div class="tab-content" id="apptabs-content">
+                    <div class="tab-pane active" id="gbook">
+                        <p class="appDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mi augue, rutrum nec neque eget, luctus accumsan urna. Suspendisse vestibulum odio nec aliquet ullamcorper. Integer luctus at mauris sed dapibus. Suspendisse elementum libero vel purus pulvinar, ac feugiat nisi luctus.</p>
+                        <img src="img/imgapp-gbook.png" alt="G-Book" class="appImg"/>
+                    </div><!-- tab-pane -->
+                    <div class="tab-pane" id="gclient">
+                        <p class="appDesc">Etiam sit amet dignissim mi. Quisque ullamcorper rutrum nibh, sed elementum lacus condimentum quis. Phasellus in hendrerit quam. Curabitur dolor tellus, aliquet id enim at, ullamcorper pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet.</p>
+                        <img src="img/imgapp-gbook.png" alt="G-Book" class="appImg"/>
+                    </div><!-- tab-pane -->
+                    <div class="tab-pane" id="gdoc">
+                        <p class="appDesc">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec magna nulla, lobortis nec blandit et, ultricies sit amet metus. Sed nec aliquet elit. Integer nibh lectus, dapibus tristique libero sit amet, bibendum accumsan sapien. </p>
+                        <img src="img/imgapp-gbook.png" alt="G-Book" class="appImg"/>
+                    </div><!-- tab-pane -->
+                    <div class="tab-pane" id="gmessage">
+                        <p class="appDesc">Proin tincidunt lectus at diam porttitor, congue condimentum mi imperdiet. Nunc id augue dolor. Nunc egestas mattis felis. Donec blandit sollicitudin dui non dignissim. Quisque scelerisque gravida imperdiet. Nam adipiscing quam sem, id pellentesque elit laoreet id. Donec sem mauris, convallis sit amet nunc quis, pellentesque fringilla odio.</p>
+                        <img src="img/imgapp-gbook.png" alt="G-Book" class="appImg"/>
+                    </div><!-- tab-pane -->
+                    <div class="tab-pane" id="gtime">
+                        <p class="appDesc">Nam facilisis risus id elementum convallis. Morbi facilisis elementum dolor. Maecenas commodo ipsum sit amet tortor gravida, a tempus elit ultricies. Sed sodales metus nisi, lacinia bibendum metus egestas a. Duis libero odio, fringilla vitae justo nec, posuere posuere arcu. Proin vulputate volutpat neque, vitae pretium nibh vehicula rhoncus.</p>
+                        <img src="img/imgapp-gbook.png" alt="G-Book" class="appImg"/>
+                    </div><!-- tab-pane -->
+                    <div class="tab-pane" id="gtravel">
+                        <p class="appDesc">Morbi bibendum nisl nec ipsum pellentesque, at fermentum erat tempor. Etiam tempor varius est et accumsan. Maecenas diam augue, volutpat id rhoncus vel, volutpat laoreet arcu. Cras vel dui eget mauris placerat laoreet sed eu ipsum. Nulla ut nibh a orci tristique elementum vitae quis nunc.</p>
+                        <img src="img/imgapp-gbook.png" alt="G-Book" class="appImg"/>
+                    </div><!-- tab-pane -->
+                </div><!-- tab-content -->
+                <div class="appTabsContainer">
+                    <ul class="nav nav-tabs" id="apptabs">
+                        <li class="active">
+                            <a href="#gbook">
+                                <i class="fa fa-book"></i>
+                                <span class="apptitle">G-book</span><br/>
+                                <span class="appdesc">Money Management</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gclient">
+                                <i class="fa fa-users"></i>
+                                <span class="apptitle">G-CLIENT</span><br/>
+                                <span class="appdesc">Client Management</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gdoc">
+                                <i class="fa fa-file-text"></i>
+                                <span class="apptitle">G-doc</span><br/>
+                                <span class="appdesc">Document Management</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gmessage">
+                                <i class="fa fa-comments"></i>
+                                <span class="apptitle">G-message</span><br/>
+                                <span class="appdesc">Internal Communication</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gtime">
+                                <i class="fa fa-clock-o"></i>
+                                <span class="apptitle">G-time</span><br/>
+                                <span class="appdesc">Time Tracker</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gtravel">
+                                <i class="fa fa-plane"></i>
+                                <span class="apptitle">G-travel</span><br/>
+                                <span class="appdesc">Travel Logs</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- appTabsContainer -->
+                <div class="clear"></div><!-- clear -->
+            </div><!-- tabContentWrapper -->
+        </div><!-- tabsection-inner -->
+    </div><!-- tabsection -->
+
+    <div class="smallsection01">
+        <div class="smallsection01-inner">
+            <div class="row-fluid">
+                <div class="span9">
+                    <h3>Use our applications for FREE today! </h3>
+                    <p>Lorem ipsum dolor sit amet, cotetur adipiscing elit ut scelerisque malesuada orc coetur adipiscing elit.</p>
+                </div><!-- span9 -->
+                <div class="span3">
+                    <a href="#" class="btn btn-primary">CREATE ACCOUNT NOW</a>
+                </div><!-- span3 -->
+                <div class="clear"></div><!-- clear -->
+            </div><!-- row-fluid -->
+        </div><!-- smallsection01-inner -->
+    </div><!-- smallsection01 -->
+
+    <div class="packages">
+        <div class="packages-inner">
+            <h2 class="heading">select a package for you</h2>
+            <p class="sectionDescription align-center">All packages include: Basic Gemican Applications, Basic Reports, A Member Page, Online Support, User Guide, FAQ,<br/>and future application upgrades by Gemican.</p>
+            <div class="packageContainer">
+                <div class="row-fluid">
+                    <div class="span4">
+                        <div class="greyColumn">
+                            <h3>Basic</h3>
+                            <div class="circle">
+                                <h1>FREE</h1>
+                                <p>per month</p>
+                            </div><!-- circle -->
+                            <h4>features included</h4>
+                            <ul class="featuresList">
+                                <li>Basic Gemican Application</li>
+                                <li>Member Landing Page<br/>(Member Area)</li>
+                                <li>Data Back-Up</li>
+                                <li>Basic Reports</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;<br/>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                            </ul>
+                            <div class="packageFooter">
+                                <h5>FREE</h5>
+                                <p class="info">Plus 30 days try out on all Gemican Applications and Advanced Reports</p>
+                                <a href="#" class="btn btn-primary">Sign Up</a>
+                            </div><!-- packageFooter -->
+                        </div><!-- greyColumn -->
+                    </div><!-- span4 -->
+                    <div class="span4">
+                        <div class="blueColumn">
+                            <h3>premium</h3>
+                            <div class="circle">
+                                <h1>$49<span>.95</span></h1>
+                                <p>per month</p>
+                            </div><!-- circle -->
+                            <h4>features included</h4>
+                            <ul class="featuresList">
+                                <li>Gemican Application</li>
+                                <li>Member Landing Page<br/>(Member Area)</li>
+                                <li>Data Back-Up</li>
+                                <li>Basic &amp; Advanced Reports</li>
+                                <li>Ulimited Storage Space</li>
+                                <li>IT Support (Phone / Online)</li>
+                                <li>In House/Webinar<br/>Training Available</li>
+                                <li>Business Directory Listing</li>
+                                <li>Advertisement (6 Months)</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                            </ul>
+                            <div class="packageFooter">
+                                <h5>Promotional Discount</h5>
+                                <div class="circle-default">
+                                    <h1>$29<span>.95</span></h1>
+                                    <p>per month<br/>for 6 moths</p>
+                                </div><!-- circle -->
+                                <a href="#" class="btn">Sign Up</a>
+                            </div><!-- packageFooter -->
+                        </div><!-- blueColumn -->
+                    </div><!-- span4 -->
+                    <div class="span4">
+                        <div class="greyColumn">
+                            <h3>strategic partner</h3>
+                            <div class="circle">
+                                <h2>CALL FOR QUOTE</h2>
+                            </div><!-- circle -->
+                            <h4>features included</h4>
+                            <ul class="featuresList">
+                                <li>Gemican Application</li>
+                                <li>Member Landing Page<br/>(Member Area)</li>
+                                <li>Data Back-Up</li>
+                                <li>Basic &amp; Advanced Reports</li>
+                                <li>Ulimited Storage Space</li>
+                                <li>IT Support (Phone / Online)</li>
+                                <li>In House/Webinar<br/>Training Available</li>
+                                <li>Business Directory Listing</li>
+                                <li>Advertisement (2 Years)</li>
+                                <li>Customization</li>
+                                <li>10 Year Premium Account</li>
+                            </ul>
+                            <div class="packageFooter">
+                                <h5>Call For Quote</h5>
+                                <p class="info">1-855-828-0222<br/>Start with our Basic Package</p>
+                                <a href="#" class="btn btn-primary">Sign Up</a>
+                            </div><!-- packageFooter -->
+                        </div><!-- greyColumn -->
+                    </div><!-- span4 -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- row-fluid -->
+            </div><!-- packageContainer -->
+        </div><!-- packages-inner -->
+    </div><!-- packages -->
+
+    <div class="contact">
+        <div class="contact-inner">
+            <h2 class="heading white">Drop us a message</h2>
+            <form action="#" method="post">
+                <div class="row-fluid">
+                    <div class="span6">
+                        <input type="text" name="firstname" placeholder="First Name" />
+                    </div><!-- span6 -->
+                    <div class="span6">
+                        <input type="text" name="lastname" placeholder="Last Name" />
+                    </div><!-- span6 -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- row-fluid -->
+                <div class="row-fluid">
+                    <div class="span6">
+                        <input type="text" name="company" placeholder="Company Name" />
+                    </div><!-- span6 -->
+                    <div class="span6">
+                        <input type="text" name="phonenumber" placeholder="Phone Number" />
+                    </div><!-- span6 -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- row-fluid -->
+                <div class="row-fluid">
+                    <div class="span6">
+                        <input type="email" name="emailadd" placeholder="Email Address" />
+                    </div><!-- span6 -->
+                    <div class="span6">
+                        <input type="text" name="stateprovince" placeholder="State/Province" />
+                    </div><!-- span6 -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- row-fluid -->
+                <div class="row-fluid">
+                    <div class="span6">
+                        <select name="country">
+                            <option value="0">Select Country</option>
+                            <option value="1">Country Name 1</option>
+                            <option value="2">Country Name 2</option>
+                            <option value="3">Country Name 3</option>
+                            <option value="4">Country Name 4</option>
+                            <option value="5">Country Name 5</option>
+                        </select>
+                    </div><!-- span6 -->
+                    <div class="span6">
+                        <input type="text" name="subject" placeholder="Subject" />
+                    </div><!-- span6 -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- row-fluid -->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <textarea></textarea>
+                    </div><!-- span12 -->
+                </div><!-- row-fluid -->
+                <div class="row-fluid">
+                    <div class="span8">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div><!-- span9 -->
+                    <div class="span4 align-right">
+                        <input type="submit" value="Send Message" class="btn btn-primary"/>
+                        <div class="clear"></div><!-- clear -->
+                    </div><!-- span3 -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- row-fluid -->
+            </form>
+        </div><!-- contact-inner -->
+        <div class="addressSection">
+            <div class="addressSection-inner">
+                <div class="row-fluid">
+                    <div class="span4">
+                        <p><img src="img/icon-location.png" alt="" /></p>
+                        <p>Gemican Inc - 2500 New Brighton Blvd<br/>Suite 205 Minneapolis,  MN 55114</p>
+                    </div><!-- span4 -->
+                    <div class="span4">
+                        <p><img src="img/icon-location.png" alt="" /></p>
+                        <p>Sales and Marketing - 360 Larpenteur Ave.<br/>West St. Paul, MN 55113</p>
+                    </div><!-- span4 -->
+                    <div class="span4">
+                        <p><img src="img/icon-phone.png" alt="" /></p>
+                        <p>Technical support: 1-855-828-0222 Ext 103<br/>Email: techsupport@gemican.com </p>
+                    </div><!-- span4 -->
+                    <div class="clear"></div><!-- clear -->
+                </div><!-- row-fluid -->
+            </div><!-- addressSection-inner -->
+        </div><!-- addressSection -->
+    </div><!-- contact -->
+
+    <div class="section07">
+        <div class="section07-inner">
+            <div class="row-fluid">
+                <div class="span4 colWrapper">
+                    <h3>About Gemican</h3>
+                    <p><img src="img/logo-gemican-software.png" alt="Gemican Software" /></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam libero eget orci dictum aliquam. Vestibulum dapibus felis sed eleifend euismod. Nulla vehicula cursus suscipit. Pellentesque sapien ante, porttitor sed dui pretium, imperdiet tristique tellus.</p>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div><!-- span4 -->
+                <div class="span4 colWrapper">
+                    <h3>Our Video</h3>
+                </div><!-- span4 -->
+                <div class="span4 colWrapper">
+                    <h3>Latest Updates</h3>
+                    <ul class="latestUpdateList">
+                        <li>
+                            <h5 class="updateTitle"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscng elit</a></h5>
+                            <p class="datePost"><i class="fa fa-calendar"></i> Febraury 14, 2014</p>
+                        </li>
+                        <li>
+                            <h5 class="updateTitle"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscng elit</a></h5>
+                            <p class="datePost"><i class="fa fa-calendar"></i> Febraury 14, 2014</p>
+                        </li>
+                        <li>
+                            <h5 class="updateTitle"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscng elit</a></h5>
+                            <p class="datePost"><i class="fa fa-calendar"></i> Febraury 14, 2014</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-small">View More</a>
+                </div><!-- span4 -->
+                <div class="clear"></div><!-- clear -->
+            </div><!-- row-fluid -->
+        </div><!-- section07-inner -->
+    </div><!-- section07 -->
+
+    <footer>
+        <div class="footer-inner">
+            <ul class="socialMedia">
+                <li><a href="#"><img src="img/icon-facebook.png" alt="facebook" /></a></li>
+                <li><a href="#"><img src="img/icon-twitter.png" alt="twitter" /></a></li>
+                <li><a href="#"><img src="img/icon-linkedin.png" alt="linkedin" /></a></li>
+                <li><a href="#"><img src="img/icon-googleplus.png" alt="google+" /></a></li>
+                <li><a href="#"><img src="img/icon-youtube.png" alt="youtube" /></a></li>
+            </ul>
+            <ul class="footernav">
+                <li><a href="#">about us</a></li>
+                <li><a href="#">terms of use</a></li>
+                <li><a href="#">legal disclosure</a></li>
+                <li><a href="#">trademark</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">faq</a></li>
+            </ul>
+            <p class="copyright">Copyright &copy; 2014 GEMICAN SOFTWARE. All Rights Reserved.</p>
+        </div><!-- footer-inner -->
+    </footer>
+        
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-affix.js"></script>
+    <script src="js/holder/holder.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>

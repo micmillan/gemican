@@ -1,0 +1,142 @@
+  @media only screen and (min-width: 1349px){
+    #screen8.responsiveInfo{
+      display: block
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1348px){
+    #screen7.responsiveInfo{
+      display: block
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1199px){
+    #screen6.responsiveInfo{
+      display: block
+    }
+
+    /* gcompany - employees */
+    #gtable-employees.gtable .gtable-cell.col6{
+      display: none;
+    }
+    #gtable-employees.gtable .moreDetailsContainer li.col6,
+    #gtable-employees.gtable .moreDetailsContainer{
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+    #screen5.responsiveInfo{
+      display: block
+    }
+
+    /* gcompany - employees */
+    #gtable-employees.gtable .gtable-cell.col6{
+      display: none;
+    }
+    #gtable-employees.gtable .moreDetailsContainer li.col6,
+    #gtable-employees.gtable .moreDetailsContainer{
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 767px){
+    #screen4.responsiveInfo{
+      display: block
+    }
+
+    /* gcompany - employees */
+    #gtable-employees.gtable .gtable-cell.col4,
+    #gtable-employees.gtable .gtable-cell.col5,
+    #gtable-employees.gtable .gtable-cell.col6{
+      display: none;
+    }
+    #gtable-employees.gtable .moreDetailsContainer li.col4,
+    #gtable-employees.gtable .moreDetailsContainer li.col5,
+    #gtable-employees.gtable .moreDetailsContainer li.col6,
+    #gtable-employees.gtable .moreDetailsContainer{
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 480px) and (max-width: 599px){
+    #screen3.responsiveInfo{
+      display: block
+    }
+
+    /* gcompany - employees */
+    #gtable-employees.gtable .gtable-cell.col3,
+    #gtable-employees.gtable .gtable-cell.col4,
+    #gtable-employees.gtable .gtable-cell.col5,
+    #gtable-employees.gtable .gtable-cell.col6{
+      display: none;
+    }
+    #gtable-employees.gtable .moreDetailsContainer li.col3,
+    #gtable-employees.gtable .moreDetailsContainer li.col4,
+    #gtable-employees.gtable .moreDetailsContainer li.col5,
+    #gtable-employees.gtable .moreDetailsContainer li.col6,
+    #gtable-employees.gtable .moreDetailsContainer{
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 321px) and (max-width: 479px){
+    #screen2.responsiveInfo{
+      display: block
+    }
+
+    /* gcompany - departments */
+    #gtable-departments.gtable .gtable-cell.col2,
+    #gtable-departments.gtable .gtable-cell.col3{
+      display: none;
+    }
+    #gtable-departments.gtable .moreDetailsContainer li.col2,
+    #gtable-departments.gtable .moreDetailsContainer li.col3,
+    #gtable-departments.gtable .moreDetailsContainer{
+      display: block;
+    }
+
+    /* gcompany - employees */
+    #gtable-employees.gtable .gtable-cell.col2,
+    #gtable-employees.gtable .gtable-cell.col3,
+    #gtable-employees.gtable .gtable-cell.col4,
+    #gtable-employees.gtable .gtable-cell.col5,
+    #gtable-employees.gtable .gtable-cell.col6{
+      display: none;
+    }
+    #gtable-employees.gtable .moreDetailsContainer li.col2,
+    #gtable-employees.gtable .moreDetailsContainer li.col3,
+    #gtable-employees.gtable .moreDetailsContainer li.col4,
+    #gtable-employees.gtable .moreDetailsContainer li.col5,
+    #gtable-employees.gtable .moreDetailsContainer li.col6,
+    #gtable-employees.gtable .moreDetailsContainer{
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 320px){
+    #screen1.responsiveInfo{
+      display: block
+    }
+
+    /* gcompany - departments */
+    #gtable-departments.gtable .gtable-cell.col2,
+    #gtable-departments.gtable .gtable-cell.col3{
+      display: none;
+    }
+    #gtable-departments.gtable .moreDetailsContainer li.col2,
+    #gtable-departments.gtable .moreDetailsContainer li.col3,
+    #gtable-departments.gtable .moreDetailsContainer{
+      display: block;
+    }
+
+    /* gcompany - employees */
+    #gtable-employees.gtable .gtable-cell.col2,
+    #gtable-employees.gtable .gtable-cell.col3,
+    #gtable-employees.gtable .gtable-cell.col4,
+    #gtable-employees.gtable .gtable-cell.col5,
+    #gtable-employees.gtable .gtable-cell.col6{
+      display: none;
+    }
+    #gtable-employees.gtable .moreDetailsContainer li.col2,
+    #gtable-employees.gtable .moreDetailsContainer li.col3,
+    #gtable-employees.gtable .moreDetailsContainer li.col4,
+    #gtable-employees.gtable .moreDetailsContainer li.col5,
+    #gtable-employees.gtable .moreDetailsContainer li.col6,
+    #gtable-employees.gtable .moreDetailsContainer{
+      display: block;
+    }
+  }
